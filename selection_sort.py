@@ -2,7 +2,6 @@ class Solution:
     def selectionSort(self, arr,n):
         #code here
         t=0
-        
         for i in range(n):
             index_of_min=i
             for s in range(t,n):#0 1 2 3
