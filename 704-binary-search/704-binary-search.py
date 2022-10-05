@@ -2,10 +2,10 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         nums.sort()
         lbi=0
-        ubi=len(nums) #3
+        ubi=len(nums)-1 #3
         
         while(lbi<=ubi):
-            mid= lbi+int((ubi-lbi)//2) #0
+            mid= lbi+(ubi-lbi)//2 #0
             
             if target not in nums:
                 return -1
