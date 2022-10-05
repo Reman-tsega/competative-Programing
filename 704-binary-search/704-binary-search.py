@@ -7,9 +7,9 @@ class Solution:
         while(lbi<=ubi):
             mid= lbi+(ubi-lbi)//2 #0
             
-            if target not in nums:
-                return -1
-            elif nums[mid]==target:
+            # if target not in nums:
+            #     return -1
+            if nums[mid]==target:
                 return mid
             elif nums[mid]<target:
                 lbi= mid+1#1
